@@ -14,15 +14,15 @@ public class Prompt {
         this.output = output;
     }
 
-    public<T> T getUserInput(InputScanner<T> prompt) {
+    public<T> T getUserInput(InputScanner<T> scanner) {
 
-        prompt.show(output);
-        while (!prompt.hasValidInput(input)) {
-            prompt.error(output);
-            prompt.show(output);
+        scanner.show(output);
+        while (!scanner.hasValidInput(input)) {
+            scanner.error(output);
+            scanner.show(output);
             input.nextLine();
         }
 
-        return prompt.getUserInput(input);
+        return scanner.getUserInput(input);
     }
 }
