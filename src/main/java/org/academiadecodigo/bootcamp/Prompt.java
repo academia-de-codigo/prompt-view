@@ -20,7 +20,7 @@ public class Prompt {
         while (!scanner.hasValidInput(input)) {
             scanner.error(output);
             scanner.show(output);
-            input.nextLine();
+            input.nextLine(); // consume extra CR
         }
 
         return scanner.getUserInput(input);

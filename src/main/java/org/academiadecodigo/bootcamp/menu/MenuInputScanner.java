@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp;
+package org.academiadecodigo.bootcamp.menu;
 
 import org.academiadecodigo.bootcamp.integer.IntegerRangeInputScanner;
 
