@@ -11,7 +11,7 @@ public class MenuInputScanner extends IntegerRangeInputScanner {
         super(1, options.length);
 
         this.options = options;
-        setMessage(buildMenu(getMessage(), options));
+        super.setMessage(buildMenu(getMessage(), options));
 
     }
 
