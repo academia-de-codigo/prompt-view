@@ -14,7 +14,7 @@ Prompt prompt = new Prompt(System.in, System.out);
 IntegerRangeInputScanner scanner = new IntegerRangeInputScanner(3, 6);
 
 // Grab the user in a loop until a valid input is inserted
-String userInput = prompt.getUserInput(scanner);
+int userInput = prompt.getUserInput(scanner);
 
 ```
 
