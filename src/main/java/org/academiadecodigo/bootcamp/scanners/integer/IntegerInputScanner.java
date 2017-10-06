@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.integer;
+package org.academiadecodigo.bootcamp.scanners.integer;
 
 import org.academiadecodigo.bootcamp.InputScanner;
 

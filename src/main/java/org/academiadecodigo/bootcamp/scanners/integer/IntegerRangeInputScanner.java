@@ -1,14 +1,15 @@
-package org.academiadecodigo.bootcamp.integer;
+package org.academiadecodigo.bootcamp.scanners.integer;
 
 import java.util.Scanner;
-import java.util.Set;
 
-public class IntegerSetInputScanner extends IntegerInputScanner {
+public class IntegerRangeInputScanner extends IntegerInputScanner {
 
-    private Set<Integer> integerSet;
+    private int min;
+    private int max;
 
-    public IntegerSetInputScanner(Set<Integer> integerSet) {
-        this.integerSet = integerSet;
+    public IntegerRangeInputScanner(int min, int max) {
+        this.min = min;
+        this.max = max;
     }
 
     @Override
@@ -19,7 +20,7 @@ public class IntegerSetInputScanner extends IntegerInputScanner {
         }
 
         Integer value = input.nextInt();
-        return integerSet.contains(value);
+        return value >= min && value <= max;
     }
 
     @Override

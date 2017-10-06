@@ -1,14 +1,14 @@
-package string;
+package examples.precisiondouble;
 
 import org.academiadecodigo.bootcamp.Prompt;
-import org.academiadecodigo.bootcamp.string.StringInputScanner;
+import org.academiadecodigo.bootcamp.scanners.precisiondouble.DoubleInputScanner;
 
-public class StringInputScannerTest {
+public class DoubleInputScannerTest {
 
     public static void main(String[] args) {
 
         Prompt prompt = new Prompt(System.in, System.out);
-        StringInputScanner scanner = new StringInputScanner();
+        DoubleInputScanner scanner = new DoubleInputScanner();
 
         System.out.println(prompt.getUserInput(scanner));
 

@@ -1,14 +1,22 @@
-package org.academiadecodigo.bootcamp.string;
+package org.academiadecodigo.bootcamp.scanners.precisiondouble;
 
 import org.academiadecodigo.bootcamp.InputScanner;
 
 import java.io.PrintStream;
 import java.util.Scanner;
 
-public class StringInputScanner implements InputScanner<String> {
+public class DoubleInputScanner implements InputScanner<Double> {
 
-    private String message = "? : ";
-    private String error = "Input empty!";
+    private String message = "Insert a number: ";
+    private String error = "That is not a number!";
+
+    public String getMessage() {
+        return message;
+    }
+
+    public String getError() {
+        return error;
+    }
 
     public void setMessage(String message) {
         this.message = message;
@@ -30,23 +38,12 @@ public class StringInputScanner implements InputScanner<String> {
     }
 
     @Override
-    public String getUserInput(Scanner input) {
-        // The token was already consumed by hasValidInput,
-        // so we need to get it from the last matcher
-        return input.match().group();
+    public Double getUserInput(Scanner input) {
+        return input.nextDouble();
     }
 
     @Override
     public boolean hasValidInput(Scanner input) {
-
-        if (!input.hasNextLine()) {
-            return false;
-        }
-
-        if (input.next().isEmpty()) {
-            return false;
-        }
-
-        return true;
+        return input.hasNextDouble();
     }
 }

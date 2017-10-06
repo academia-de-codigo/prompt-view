@@ -1,6 +1,6 @@
-package org.academiadecodigo.bootcamp.menu;
+package org.academiadecodigo.bootcamp.scanners.menu;
 
-import org.academiadecodigo.bootcamp.integer.IntegerRangeInputScanner;
+import org.academiadecodigo.bootcamp.scanners.integer.IntegerRangeInputScanner;
 
 public class MenuInputScanner extends IntegerRangeInputScanner {
 

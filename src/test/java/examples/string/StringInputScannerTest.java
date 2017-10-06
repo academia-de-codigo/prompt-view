@@ -1,14 +1,14 @@
-package integer;
+package examples.string;
 
 import org.academiadecodigo.bootcamp.Prompt;
-import org.academiadecodigo.bootcamp.integer.IntegerInputScanner;
+import org.academiadecodigo.bootcamp.scanners.string.StringInputScanner;
 
-public class IntegerInputScannerTest {
+public class StringInputScannerTest {
 
     public static void main(String[] args) {
 
         Prompt prompt = new Prompt(System.in, System.out);
-        IntegerInputScanner scanner = new IntegerInputScanner();
+        StringInputScanner scanner = new StringInputScanner();
 
         System.out.println(prompt.getUserInput(scanner));
 

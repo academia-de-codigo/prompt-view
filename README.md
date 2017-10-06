@@ -36,3 +36,6 @@ scanner.setMessage("Choose an option: ");
 // Grab the user in a loop until a valid input is inserted
 int userInput = prompt.getUserInput(scanner));
 ```
+
+The examples folder contains working examples for other input scanner types.
+

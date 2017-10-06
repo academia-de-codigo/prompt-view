@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.string;
+package org.academiadecodigo.bootcamp.scanners.string;
 
 import java.util.Scanner;
 import java.util.Set;

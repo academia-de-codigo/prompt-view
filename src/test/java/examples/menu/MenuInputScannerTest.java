@@ -1,7 +1,7 @@
-package menu;
+package examples.menu;
 
 import org.academiadecodigo.bootcamp.Prompt;
-import org.academiadecodigo.bootcamp.menu.MenuInputScanner;
+import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
 
 public class MenuInputScannerTest {
 
