@@ -18,7 +18,7 @@ int userInput = prompt.getUserInput(scanner);
 
 ```
 
-Displaying a menu with a couple of options is acheived by using a different type of input scanner instance:
+Displaying a menu with a couple of options is achieved by using a different type of input scanner instance:
 
 ```java
 // Define some options for the menu
@@ -36,6 +36,23 @@ scanner.setMessage("Choose an option: ");
 // Grab the user in a loop until a valid input is inserted
 int userInput = prompt.getUserInput(scanner));
 ```
+
+Using PasswordInputScanner to hide your password from prying eyes:
+
+```java
+// Create a new prompt attached to standard input/output
+Prompt prompt = new Prompt(System.in, System.out);
+
+// Instantiate a password input scanner 
+PasswordInputScanner scanner = new PasswordInputScanner();
+
+// Grab that password 
+String password = prompt.getUserInput(scanner));
+```
+
+:exclamation: __Password Masking__ will only work on compiled programs, otherwise masking will not occur.
+
+----
 
 The examples folder contains working examples for other input scanner types.
 
