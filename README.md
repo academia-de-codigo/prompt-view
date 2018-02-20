@@ -37,7 +37,7 @@ scanner.setMessage("Choose an option: ");
 int userInput = prompt.getUserInput(scanner));
 ```
 
-Using PasswordInputScanner to hide your password from prying eyes:
+Hide your password from prying eyes:
 
 ```java
 // Create a new prompt attached to standard input/output
@@ -50,7 +50,7 @@ PasswordInputScanner scanner = new PasswordInputScanner();
 String password = prompt.getUserInput(scanner));
 ```
 
-:exclamation: __Password Masking__ will only work on compiled programs, otherwise masking will not occur.
+:exclamation: __Password Masking__  might not work and fallback to clear text on IDEs or other environments where the java virtual machine does not have a console. 
 
 ----
 
