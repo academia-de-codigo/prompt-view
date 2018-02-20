@@ -6,7 +6,7 @@
 
     <groupId>org.academiadecodigo.bootcamp</groupId>
     <artifactId>prompt-view</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
 
     <dependencies>
 
@@ -42,6 +42,7 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
