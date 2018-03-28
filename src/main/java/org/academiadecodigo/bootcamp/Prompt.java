@@ -11,6 +11,7 @@ public class Prompt {
 
     public Prompt(InputStream input, PrintStream output) {
         this.input = new Scanner(input);
+        this.input.useDelimiter("(\\r\\n|\\r|\\n)"); // each token is delimited by a line break
         this.output = output;
     }
 

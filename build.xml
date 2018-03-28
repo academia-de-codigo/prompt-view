@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<project name="prompt-view" basedir="." default="jarfile">
+
+    <target name="init" description="Initializes properties">
+        <property name="project.name" value="prompt-view" />
+        <property name="src.dir" value="src" />
+        <property name="build.dir" value="build" />
+        <property name="classes.dir" value="${build.dir}/classes" />
+        <property name="version" value="0.2.1-SNAPSHOT" />
+    </target>
+
+    <target name="prepare" description="Creates the build and classes directories" depends="init">
+        <mkdir dir="${classes.dir}" />
+    </target>
+
+    <target name="compile" description="Compiles the code" depends="prepare">
+        <javac includeantruntime="false" srcdir="${src.dir}" destdir="${classes.dir}" />
+    </target>
+
+    <target name="jarfile" description="Archives the code" depends="compile">
+        <jar destfile="${build.dir}/${project.name}-${version}.jar" basedir="${classes.dir}" />
+    </target>
+
+    <target name="clean" description="Clean up" depends="init">
+        <delete dir="${build.dir}" />
+    </target>
+
+</project>
