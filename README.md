@@ -34,7 +34,7 @@ MenuInputScanner scanner = new MenuInputScanner(options);
 scanner.setMessage("Choose an option: ");
 
 // Grab the user in a loop until a valid input is inserted
-int userInput = prompt.getUserInput(scanner));
+int userInput = prompt.getUserInput(scanner);
 ```
 
 Hide your password from prying eyes:
@@ -47,7 +47,7 @@ Prompt prompt = new Prompt(System.in, System.out);
 PasswordInputScanner scanner = new PasswordInputScanner();
 
 // Grab that password 
-String password = prompt.getUserInput(scanner));
+String password = prompt.getUserInput(scanner);
 ```
 
 :exclamation: __Password Masking__  might not work and fallback to clear text on IDEs or other environments where the java virtual machine does not have a console. 
