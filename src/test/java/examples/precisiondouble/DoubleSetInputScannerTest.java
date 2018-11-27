@@ -20,7 +20,7 @@ public class DoubleSetInputScannerTest {
 
         DoubleSetInputScanner scanner = new DoubleSetInputScanner(options);
         scanner.setMessage("First: " + firstValue + " Second: " + secondValue + " ? ");
-        scanner.setError("Invalid answer!");
+        scanner.setError("Invalid value allow!");
         System.out.println(prompt.getUserInput(scanner));
 
     }
