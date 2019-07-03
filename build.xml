@@ -15,7 +15,7 @@
     </target>
 
     <target name="compile" description="Compiles the code" depends="prepare">
-        <javac includeantruntime="false" srcdir="${src.dir}" destdir="${classes.dir}" />
+        <javac source="9" target="9" includeantruntime="false" srcdir="${src.dir}" destdir="${classes.dir}" />
     </target>
 
     <target name="jarfile" description="Archives the code" depends="compile">
